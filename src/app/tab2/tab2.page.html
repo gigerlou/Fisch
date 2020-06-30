@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      New Catch
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,44 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">New Catch</ion-title>
     </ion-toolbar>
   </ion-header>
+  <br>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-icon size="large" name="camera-outline"></ion-icon>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>
+          <br><br><br><br>
+        </ion-label>
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Fischart</ion-label>
+        <ion-select value="" okText="Okay" cancelText="Dismiss">
+          <ion-select-option >unbekannt</ion-select-option>
+          <ion-select-option >Egli</ion-select-option>
+          <ion-select-option >Hecht</ion-select-option>
+          <ion-select-option >Forelle</ion-select-option>
+          <ion-select-option >Felche</ion-select-option>
+        </ion-select>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Wetter</ion-label>
+        <ion-select value="" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="Wolken">Wolken</ion-select-option>
+          <ion-select-option value="Regen">Regen</ion-select-option>
+          <ion-select-option value="Sonne">Sonne</ion-select-option>
+          <ion-select-option value="Wind">Wind</ion-select-option>
+        </ion-select>
+      </ion-item>
+    
+    </ion-list>
+
+    
+  
+  
 </ion-content>
