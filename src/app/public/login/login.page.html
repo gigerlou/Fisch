@@ -1,12 +1,32 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>Login</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button position="primary" href="src/app/members/settings">
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
 
-  <ion-button (click) = "login()" expand ="block">Login</ion-button>
-  <ion-button expand = "block" color ="secondary" href="/register" routerDirection="forward">Register</ion-button>
+<ion-content>
+
+
+  <img src="assets/images/login_pic.png" alt="logo">
+ 
+
+ <input type="text" placeholder="Username">
+ <input type="password" placeholder="Password">
+
+ 
+
+  <ion-button class="login" >LOGIN</ion-button>
 
 </ion-content>
