@@ -21,15 +21,13 @@ ion-content  {
     margin-top: 10px;
     text-align: center;
     padding: 15px 80px;
-    text-decoration: none;
     display: inline-block;
-    background-color: red($color: #000000);
-   
     font-size: 13px;
-    transition: all 0.3s ease-in-out;
-    width: 85%;
-    height: 55px; 
     color: white;
+    width: 85%;
+    height: 70px; 
+    
+   
 
 }
 input[type=text] , input[type=password]{
