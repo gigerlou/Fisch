@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
   {
@@ -15,7 +14,7 @@ const routes: Routes = [
     loadChildren: () => import('./public/register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'members', canActivate: [AuthGuardService], loadChildren: () => import('./members/member-routing.module').then(m => m.MemberRoutingModule)
+    path: 'members', loadChildren: () => import('./members/member-routing.module').then(m => m.MemberRoutingModule)
   }
 ];
 @NgModule({

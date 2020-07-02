@@ -1,4 +1,4 @@
-<ion-header>
+<!--<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button (click)="logout()">
@@ -14,19 +14,18 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
+-->
 
 <ion-content>
 
 
-  <img src="assets/images/login_pic.png" alt="logo">
- 
+  <div>
+    <ion-input class="username" placeholder="Username"></ion-input>
+    <ion-input type="password" class="password" placeholder="Password"></ion-input>
 
- <input type="text" placeholder="Username">
- <input type="password" placeholder="Password">
+  </div>
 
- 
-
-  <ion-button (click) = "login()" expand ="block" color="success"class="login" >LOGIN</ion-button>
-  <ion-button expand = "block" color ="secondary" href="/register" routerDirection="forward">Register</ion-button>
+  <ion-button  expand="block" color="light" class="buttons">LOGIN</ion-button>
+  <ion-button expand = "block"  class="buttons" color ="secondary" href="/register" routerDirection="forward">Register</ion-button>
+  
 </ion-content>

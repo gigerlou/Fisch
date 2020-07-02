@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from 'src/app/services/authentication.service';
+import { PhotoService } from 'src/app/services/photo.service';
+
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,13 +10,11 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 })
 export class DashboardPage implements OnInit {
 
-  constructor(private authService: AuthenticationService) { }
+ constructor(public photoService: PhotoService) { }
+  
 
   ngOnInit() {
   }
 
-  logout() {
-    this.authService.logout();
-  }
 
 }
