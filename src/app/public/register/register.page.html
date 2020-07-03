@@ -13,19 +13,23 @@
   </ion-toolbar>
 </ion-header>
 
+<!--Register information forms-->
 <ion-content>
   <form onsubmit="processForm(event)">
     <ion-list lines="full" class="ion-no-margin ion-no-padding">
       <ion-item>
-        <ion-label position="stacked">First Name <ion-text color="danger">*</ion-text></ion-label>
+        <ion-label position="stacked">Username <ion-text color="danger">*</ion-text></ion-label>
         <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="stacked">Last Name <ion-text color="danger">*</ion-text></ion-label>
-        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+        <ion-label position="stacked">Password<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="password"  oninput="handleLastNameValue(event)"></ion-input>
       </ion-item>
-      
+      <ion-item>
+        <ion-label  position="stacked">Confirm Password<ion-text color="danger">*</ion-text></ion-label>
+        <ion-input type="password"  oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
 
       <ion-item>
         <ion-label position="stacked">Address</ion-label>
@@ -33,10 +37,9 @@
         <ion-input placeholder="City"></ion-input>
         <ion-input placeholder="Zip Code"></ion-input>
       </ion-item>
-
-      
     </ion-list>
 
+<!--create account and forward to dashboard-->
     <div class="ion-padding">
       <ion-button expand="block"  class="ion-no-margin" href="members/dashboard" routerDirection="forward">Create account</ion-button>
     </div>

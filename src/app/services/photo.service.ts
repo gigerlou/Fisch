@@ -10,6 +10,8 @@ import { Plugins, CameraResultType, Capacitor, FilesystemDirectory,
 export class PhotoService {
 
   constructor() { }
+
+  //Create Array for photos
   public photos: Photo[] = [];
   
 
@@ -29,6 +31,7 @@ export class PhotoService {
     
 }
 
+// Build camera interface
 interface Photo {
   filepath: string;
   webviewPath: string;

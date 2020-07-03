@@ -1,15 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Settings</ion-title>
-    <ion-tab-button  tab="dashboard">
-      <ion-icon name="images"></ion-icon>
-      <ion-label>Dashboard</ion-label>
-    </ion-tab-button>
+    <ion-buttons slot="start">
+      <ion-button href="members/dashboard" routerDirection="forward">
+        <ion-icon slot="icon-only" name="arrow-back" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <!--General settings with dropdown list-->
   <ion-list>
     <ion-list-header>
       <ion-label>General</ion-label>
@@ -17,7 +18,7 @@
   
     <ion-item>
       <ion-label class="sub">Level</ion-label>
-      <ion-select placeholder="Select One">
+      <ion-select placeholder="">
         <ion-select-option value="a">Beginner</ion-select-option>
         <ion-select-option value="b">Advanced</ion-select-option>
         <ion-select-option value="c">Professional</ion-select-option>
@@ -36,6 +37,7 @@
   
     <ion-item>
       <ion-label class="sub">Water Type</ion-label>
+      <ion-select multiple="true" [value]="[]">
         <ion-select-option value="salt">Salt Water</ion-select-option>
         <ion-select-option value="fresh">Fresh Water</ion-select-option>
       </ion-select>
@@ -44,14 +46,14 @@
     <ion-item>
       <ion-label class="sub">View Mode</ion-label>
       <ion-select  okText="Okay" cancelText="Dismiss">
-        <ion-select-option>Compact</ion-select-option>
-        <ion-select-option>Expanded</ion-select-option>
+        <ion-select-option value="com">Compact</ion-select-option>
+        <ion-select-option value="ext">Expanded</ion-select-option>
       </ion-select>
     </ion-item>
   </ion-list>
 
 
-
+<!--Advanced settings with toggle buttons-->
   <ion-list>
     <ion-list-header>
       <ion-label>
