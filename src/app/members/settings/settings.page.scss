@@ -1,7 +1,23 @@
 ion-toggle {
-    --background: rgb(158, 161, 201);
-    --background-checked: #ece9e9;
+    --background: rgb(211, 211, 211);
+    --background-checked: #999dc2;
   
-    --handle-background: #53547c;
-    --handle-background-checked: rgb(204, 204, 204);
+    --handle-background: #838383;
+    --handle-background-checked: rgb(49, 59, 114);
   }
+
+ion-list {
+  background-color: #f5f5f5;
+}
+
+ion-list-header {
+  font-size: 15px;
+}
+
+.sub {
+  padding-left: 20px;
+}
+
+ion-title {
+  text-align:left;
+}
